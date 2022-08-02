@@ -117,6 +117,10 @@ public class Main {
         System.out.println(text);
     }
 
+    public static void sayGoodbye() {
+        System.out.println("Goodbye");
+    }
+
 
 
 }
