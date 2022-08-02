@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-	String goodMorning = "Good Morning";
+	/*
+        String goodMorning = "Good Morning";
     goodMorning += " class";
     printText(goodMorning);
     sayHello();
@@ -46,7 +47,66 @@ public class Main {
         System.out.println("===STREAM===");
 
         Arrays.asList(names).stream().forEach(System.out::println);
+*/
+        int[] nums = {1, 4, 6, 7, 9};
+        // Dado un array, que multiplique el número siguiente del array
 
+        System.out.println("===Ejercicio 1===");
+        for(int i : multiplyNumbers(nums)) {
+            System.out.println(i);
+        }
+
+        //Dado un array, invertirlo
+        System.out.println("===Ejercicio 2===");
+        invertArray(nums);
+
+        System.out.println("===Ejercicio 3 ===");
+        sumaNumeros(5);
+
+        System.out.println("===Ejercicio 4 ===");
+        printEvenNumbers(nums);
+
+
+    }
+
+    public static void printEvenNumbers(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 2 == 0) {
+                System.out.println(numbers[i]);
+            }
+
+        }
+    }
+
+    public static void sumaNumeros(int i) {
+        int sum = 0;
+        for (int j = 0; j <= i; j++) {
+            sum += j;
+        }
+           System.out.println(sum);
+
+    }
+
+    public static void invertArray(int[] numbers) {
+        for(int i = numbers.length-1; i >=0; i--) {
+            System.out.println(numbers[i]);
+        }
+    }
+
+    public static int[] multiplyNumbers(int[] numbers) {
+
+        int[] result = new int[numbers.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (i < numbers.length - 1) {
+                result[i] =numbers[i] * numbers[i+1];
+            } else {
+                result[i]= numbers[i] * numbers[0];
+            }
+
+        }
+
+        return result;
 
     }
 
@@ -56,5 +116,7 @@ public class Main {
     public static void printText(String text) {
         System.out.println(text);
     }
+
+
 
 }
