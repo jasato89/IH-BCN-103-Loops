@@ -51,8 +51,8 @@ public class Main {
         // Dado un array, que multiplique el número siguiente del array
 
         System.out.println("===Ejercicio 1===");
-        for(int i : multiplyNumbers(nums)) {
-            System.out.println(i);
+        for(int z : multiplyNumbers(nums)) {
+            System.out.println(z);
         }
 
         //Dado un array, invertirlo
