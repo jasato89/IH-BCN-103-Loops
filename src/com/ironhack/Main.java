@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-	/*
         String goodMorning = "Good Morning";
     goodMorning += " class";
     printText(goodMorning);
@@ -47,7 +46,7 @@ public class Main {
         System.out.println("===STREAM===");
 
         Arrays.asList(names).stream().forEach(System.out::println);
-*/
+
         int[] nums = {1, 4, 6, 7, 9};
         // Dado un array, que multiplique el número siguiente del array
 
